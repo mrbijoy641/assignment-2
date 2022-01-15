@@ -114,6 +114,7 @@ main{
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     margin: 10px;
     padding: 20px;
+ 
 }
 .product-title h3{
     font-size: 25px;
@@ -194,6 +195,9 @@ footer i{
      margin-top: 0;
      
  }
+ .product{
+
+ }
  
  .logo{
     height: 60px;
@@ -214,6 +218,7 @@ footer i{
      
 
     }
+   
     .animation:hover{
        
         transform:  none;
@@ -227,6 +232,9 @@ footer i{
         justify-content: center;
        
     }
+   .product{
+       box-shadow: none;
+   }
     .blogs img {
         width: 80%;
     }
@@ -253,6 +261,7 @@ margin: 20px;
         margin: 0;
         grid-gap: 0;
         padding: 0;
-
+        width: 350px;
+        margin: 15px;
     }
 }
