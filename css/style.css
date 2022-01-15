@@ -104,10 +104,9 @@ main{
     grid-column-gap: 20px;
     justify-content: space-around;
     margin-bottom: 100px;
-  
-   
-   
+ 
 
+    
 }
 .product{
  
@@ -165,13 +164,13 @@ main{
 }
 footer i{
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 15px;
 }
 
 
 /* ==================================================media queries================================= */
-@media only screen and (max-width:688px){
+ @media only screen and (max-width:688px){
 
  .menu{
      display: none;
@@ -179,14 +178,30 @@ footer i{
  .banner{
      display: flex;
      flex-direction: column;
-
-   align-items: flex-start;
+    height: auto;
+  align-items: flex-start;
+    margin-left: 15px;
+   justify-content: center;   
  
-   
    
      
  }
-    .banner-left{
+ .banner-right{
+     margin: auto;
+     align-items: center;
+     margin-top: 0;
+     
+ }
+ 
+ .logo{
+    height: 60px;
+ position: absolute;
+ top: 50;
+ align-self: center;
+ justify-self: center;
+ 
+  
+ }   .banner-left{
         display: flex;
         flex-direction: column;
     }
@@ -202,29 +217,40 @@ footer i{
         transform:  none;
       
     }
-    .products{
+ 
+    .blogs, .products{
         display: flex;
-        flex-direction: column;
+       flex-direction: column;
+       flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 30px 20px;
+    }
+    .blogs img {
+        width: 80%;
+    }
+      .blog, .product{
+           margin: 20px 15px;
+           width: 100%;
+           flex-direction: column;
+           
+       }
+    }
+@media only screen and  (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .products{
+        display:grid;
+        justify-content: space-between;
+       grid-template-columns: repeat(2, 1fr);
+       grid-column-gap: 0;
+margin: 20px;
+  
     }
     .product{
-       margin-right: 0;
+        margin: 0;
+        grid-gap: 0;
+        padding: 0;
 
-    }
-    .blogs{
-        display: flex;
-        grid-template-columns: min-content;
-        flex-direction: column;
-    }
-    .blog{
-        margin: 20px 15px;
-    }
-   
-}
-/* ========================================================ipad responsive============================ */
-@media only screen and (min-width:688px)and (max-width:992px){
-    .products{
-        
-        grid-template-columns: repeat(2, 1fr);
-        flex-direction: column;
     }
 }
