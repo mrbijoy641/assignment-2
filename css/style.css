@@ -222,8 +222,8 @@ footer i{
         display: flex;
        flex-direction: column;
        flex-wrap: nowrap;
-        justify-content: space-between;
-        margin: 30px 20px;
+        justify-content: center;
+       
     }
     .blogs img {
         width: 80%;
